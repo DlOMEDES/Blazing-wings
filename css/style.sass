@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,400,700,900")
+
+$high_clr: #F08700
+$white: #FFFFFF
+$main_clr: #454042
+
+// GLOBAL STYLES
+section
+  width: 80%
+  margin: 0 auto
+a, li
+  text-decoration: none
+  color: $main_clr
+  padding: .5em
+h1, h2, h3
+  color: $main_clr
+h2
+  font-size: 1.3em
+  font-weight: 900
+
+.all_text
+  padding: .5em 0 1em 0
+  font-size: 18px
+  font-weight: 300
+  color: $main_clr
+  line-height: 1.8
+  letter-spacing: 1.2px
+  text-align: center
+
+
+// MOBILE STYLES
+body
+  font-family: roboto
+  font-weight: 300
+  font-size: 18px
+
+.main_head
+  width: 100%
+  background:
+    image: url(https://static01.nyt.com/images/2016/02/09/dining/09COOKING_CHICKENWINGS2/09COOKING_CHICKENWINGS2-superJumbo.jpg)
+    size: cover
+    repeat: no-repeat
+  color: $white
+  display: flex
+  flex-direction: column
+  .header_wrap
+    background-color: rgba(0, 0, 0, 0.25)
+    padding: 5% 0
+
+  .recipe_btn
+    padding: 5% 0
+    text-align: center
+    .button_pop
+      background: $high_clr
+      padding: .3em 1.3em
+      border-radius: .3em
+      color: $white
+      font-weight: 300
+      font-size: 16px
+
+// MOBILE BURGER BUTTON
+.mobile_nav_btn
+  width: 30px
+  height: 25px
+  position: fixed
+  margin: 1.5em
+  right: 0
+  top: 0
+  z-index: 999
+  cursor: pointer
+  .mobile_nav_line
+    width: 100%
+    height: 3px
+    background: $white
+    position: relative
+    transition: 1s ease
+    &:nth-of-type(2)
+      margin: 0.35em 0
+  .mobile_line_top
+    transform: rotate(45deg)
+    top: 13px
+    position: absolute
+  .mobile_line_middle
+    display: none
+  .mobile_line_bottom
+    transform: rotate(135deg)
+    top: 13px
+    position: absolute
+
+// NAVIGATION
+.nav_menu
+  width: 100%
+  height: 100%
+  background: $high_clr
+  padding: 30px 0
+  position: fixed
+  top: 0
+  text-align: center
+  transform: translateX(-100%)
+  transition: transform 0.6s ease
+  z-index: 99
+  .nav_ul
+    position: relative
+    top: 25%
+    .navi
+      padding: 15px
+      font-weight: 700
+      font-size: 1.5em
+      letter-spacing: 3px
+      line-height: 2.5
+      text-decoration: none
+      color: $white
+      text-transform: uppercase
+
+.nav_menu_open
+  transform: translateX(0)
+
+
+// MAIN TITLE
+.hero_title
+  font-family: abril fatface
+  font-size: 2.5em
+  text-align: center
+  padding-top: 2em
+  color: $white
+
+// BUTTONS
+.recipe_btn, .ingredients_btn, .direction_btn
+  padding: 10% 0
+  text-align: center
+  .button_pop
+    background: $high_clr
+    padding: .3em 1.3em
+    border-radius: .3em
+    color: $white
+    font-weight: 300
+    font-size: 16px
+.direction_btn
+  padding: 1em
+  text-align: center
+  .button_pop
+    padding: .3em 1.5em
+
+.buttons
+  padding: 1em
+  .nutri_btn, .ingredients_btn
+    padding: .5em
+
+// SECTIONS
+.about_sec, .video_sec, .styles_sec
+  padding-top: 2em
+  text-align: center
+  .about_head, .video_head, .styles_head
+    padding: 1em 0
+
+
+// VIDEO SECTION
+.video_content
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 30px
+  height: 0
+  overflow: hidden
+  z-index: 1
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 9999
+// STYLES SECTION
+.the_styles
+  display: flex
+  flex-direction: column
+  .wings
+    padding-top: 2em
+    font-weight: 700
+    font-size: 1em
+    font-family: abril fatface
+  .plates
+    max-width: 100%
+    padding: 1em 0
+
+footer
+  background-color: $high_clr
+  padding: 2em 0 3.5em 0
+  text-align: center
+  color: $white
+
+
+// DESKTOP STYLES
+@media only screen and (min-width: 48em)
+  section
+    width: 70%
+    margin: 0 auto
+  a, li
+    text-decoration: none
+    color: $main_clr
+    padding: .5em
+  h1, h2, h3
+    color: $main_clr
+  h2
+    font-size: 2em
+    font-weight: 900
+
+  .all_text
+    padding: .5em 0 1em 0
+    font-size: 24px
+    font-weight: 300
+    color: $main_clr
+    line-height: 1.4
+    letter-spacing: 1.2px
+    text-align: center
+
+  .main_head
+    width: 100%
+    background:
+      image: url(https://static01.nyt.com/images/2016/02/09/dining/09COOKING_CHICKENWINGS2/09COOKING_CHICKENWINGS2-superJumbo.jpg)
+      size: cover
+      repeat: no-repeat
+    color: $white
+    display: flex
+    flex-direction: column
+    .header_wrap
+      background-color: rgba(0, 0, 0, 0.25)
+      padding: 5% 0
+
+    .recipe_btn
+      padding: 5% 0
+      text-align: center
+      .button_pop
+        background: $high_clr
+        padding: .3em 1.3em
+        border-radius: .3em
+        color: $white
+        font-weight: 300
+        font-size: 24px
+
+  // MOBILE BURGER BUTTON
+  .mobile_nav_btn
+    width: 30px
+    height: 25px
+    position: fixed
+    margin: .8em
+    right: 0
+    top: 0
+    z-index: 999
+    cursor: pointer
+    .mobile_nav_line
+      width: 100%
+      height: 3px
+      background: $white
+      position: relative
+      transition: 1s ease
+      &:nth-of-type(2)
+        margin: 0.35em 0
+    .mobile_line_top
+      transform: rotate(45deg)
+      top: 13px
+      position: absolute
+    .mobile_line_middle
+      display: none
+    .mobile_line_bottom
+      transform: rotate(135deg)
+      top: 13px
+      position: absolute
+
+  // NAVIGATION
+  .nav_menu
+    width: 100%
+    height: 0
+    background: $high_clr
+    padding: 30px 0
+    position: fixed
+    top: 0
+    text-align: center
+    transform: translateX(100%)
+    transition: transform 0.3s ease
+    display: flex
+    flex-direction: column
+    .nav_ul
+      position: relative
+      top: 25%
+      display: flex
+      justify-content: center
+      align-items: center
+      .navi
+        padding: 15px
+        font-weight: 700
+        font-size: .5em
+        letter-spacing: 3px
+        line-height: 2.5
+        text-decoration: none
+        color: $white
+        text-transform: uppercase
+
+  .nav_menu_open
+    transform: translateX(0)
+    transition: transform 0.6s ease
+    height: 0em
+    text-align: center
+    display: flex
+    flex-direction: column
+  // MAIN TITLE
+  .hero_title
+    font-family: abril fatface
+    font-size: 4.5em
+    text-align: center
+    padding-top: 2em
+    color: $white
+
+  // BUTTONS
+  .ingredients_btn, .direction_btn
+    padding: 10% 0
+    text-align: center
+    .button_pop
+      background: $high_clr
+      padding: .8em 1.8em
+      border-radius: .3em
+      color: $white
+      font-weight: 300
+      font-size: 16px
+  .direction_btn
+    padding: 1.5em
+    text-align: center
+    .button_pop
+      padding: .8em 1.9em
+
+  .buttons
+    padding: 2em
+    .nutri_btn, .ingredients_btn
+      padding: 1.5em
+
+  // SECTIONS
+  .about_sec, .video_sec, .styles_sec
+    padding-top: 4em
+    text-align: center
+    .about_head, .video_head, .styles_head
+      padding: 1em 0
+
+
+  // VIDEO SECTION
+  .video_content
+    position: relative
+    padding-bottom: 56.25%
+    padding-top: 30px
+    height: 0
+    overflow: hidden
+    iframe
+      position: absolute
+      top: 15%
+      left: 12.5%
+      width: 75%
+      height: 75%
+  // STYLES SECTION
+  .the_styles
+    display: flex
+    flex-direction: row
+    .style_list
+      display: flex
+      padding-bottom: 3em
+      .wings
+        padding-top: 2em
+        font-weight: 700
+        font-size: 1em
+        font-family: abril fatface
+      .plates
+        max-width: 100%
+        padding: 1em 0
+
+  footer
+    background-color: $high_clr
+    padding: 2em 0 3.5em 0
+    text-align: center
+    color: $white

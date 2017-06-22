@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,400,700,900");
+section {
+  width: 80%;
+  margin: 0 auto; }
+
+a, li {
+  text-decoration: none;
+  color: #454042;
+  padding: 0.5em; }
+
+h1, h2, h3 {
+  color: #454042; }
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 900; }
+
+.all_text {
+  padding: 0.5em 0 1em 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #454042;
+  line-height: 1.8;
+  letter-spacing: 1.2px;
+  text-align: center; }
+
+body {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 18px; }
+
+.main_head {
+  width: 100%;
+  background-image: url(https://static01.nyt.com/images/2016/02/09/dining/09COOKING_CHICKENWINGS2/09COOKING_CHICKENWINGS2-superJumbo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column; }
+  .main_head .header_wrap {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 5% 0; }
+  .main_head .recipe_btn {
+    padding: 5% 0;
+    text-align: center; }
+    .main_head .recipe_btn .button_pop {
+      background: #F08700;
+      padding: 0.3em 1.3em;
+      border-radius: 0.3em;
+      color: #FFFFFF;
+      font-weight: 300;
+      font-size: 16px; }
+
+.mobile_nav_btn {
+  width: 30px;
+  height: 25px;
+  position: fixed;
+  margin: 1.5em;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  cursor: pointer; }
+  .mobile_nav_btn .mobile_nav_line {
+    width: 100%;
+    height: 3px;
+    background: #FFFFFF;
+    position: relative;
+    transition: 1s ease; }
+    .mobile_nav_btn .mobile_nav_line:nth-of-type(2) {
+      margin: 0.35em 0; }
+  .mobile_nav_btn .mobile_line_top {
+    transform: rotate(45deg);
+    top: 13px;
+    position: absolute; }
+  .mobile_nav_btn .mobile_line_middle {
+    display: none; }
+  .mobile_nav_btn .mobile_line_bottom {
+    transform: rotate(135deg);
+    top: 13px;
+    position: absolute; }
+
+.nav_menu {
+  width: 100%;
+  height: 100%;
+  background: #F08700;
+  padding: 30px 0;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+  z-index: 99; }
+  .nav_menu .nav_ul {
+    position: relative;
+    top: 25%; }
+    .nav_menu .nav_ul .navi {
+      padding: 15px;
+      font-weight: 700;
+      font-size: 1.5em;
+      letter-spacing: 3px;
+      line-height: 2.5;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-transform: uppercase; }
+
+.nav_menu_open {
+  transform: translateX(0); }
+
+.hero_title {
+  font-family: abril fatface;
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 2em;
+  color: #FFFFFF; }
+
+.recipe_btn, .ingredients_btn, .direction_btn {
+  padding: 10% 0;
+  text-align: center; }
+  .recipe_btn .button_pop, .ingredients_btn .button_pop, .direction_btn .button_pop {
+    background: #F08700;
+    padding: 0.3em 1.3em;
+    border-radius: 0.3em;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 16px; }
+
+.direction_btn {
+  padding: 1em;
+  text-align: center; }
+  .direction_btn .button_pop {
+    padding: 0.3em 1.5em; }
+
+.buttons {
+  padding: 1em; }
+  .buttons .nutri_btn, .buttons .ingredients_btn {
+    padding: 0.5em; }
+
+.about_sec, .video_sec, .styles_sec {
+  padding-top: 2em;
+  text-align: center; }
+  .about_sec .about_head, .about_sec .video_head, .about_sec .styles_head, .video_sec .about_head, .video_sec .video_head, .video_sec .styles_head, .styles_sec .about_head, .styles_sec .video_head, .styles_sec .styles_head {
+    padding: 1em 0; }
+
+.video_content {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  z-index: 1; }
+  .video_content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; }
+
+.the_styles {
+  display: flex;
+  flex-direction: column; }
+  .the_styles .wings {
+    padding-top: 2em;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: abril fatface; }
+  .the_styles .plates {
+    max-width: 100%;
+    padding: 1em 0; }
+
+footer {
+  background-color: #F08700;
+  padding: 2em 0 3.5em 0;
+  text-align: center;
+  color: #FFFFFF; }
+
+@media only screen and (min-width: 48em) {
+  section {
+    width: 70%;
+    margin: 0 auto; }
+
+  a, li {
+    text-decoration: none;
+    color: #454042;
+    padding: 0.5em; }
+
+  h1, h2, h3 {
+    color: #454042; }
+
+  h2 {
+    font-size: 2em;
+    font-weight: 900; }
+
+  .all_text {
+    padding: 0.5em 0 1em 0;
+    font-size: 24px;
+    font-weight: 300;
+    color: #454042;
+    line-height: 1.4;
+    letter-spacing: 1.2px;
+    text-align: center; }
+
+  .main_head {
+    width: 100%;
+    background-image: url(https://static01.nyt.com/images/2016/02/09/dining/09COOKING_CHICKENWINGS2/09COOKING_CHICKENWINGS2-superJumbo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column; }
+    .main_head .header_wrap {
+      background-color: rgba(0, 0, 0, 0.25);
+      padding: 5% 0; }
+    .main_head .recipe_btn {
+      padding: 5% 0;
+      text-align: center; }
+      .main_head .recipe_btn .button_pop {
+        background: #F08700;
+        padding: 0.3em 1.3em;
+        border-radius: 0.3em;
+        color: #FFFFFF;
+        font-weight: 300;
+        font-size: 24px; }
+
+  .mobile_nav_btn {
+    width: 30px;
+    height: 25px;
+    position: fixed;
+    margin: 0.8em;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    cursor: pointer; }
+    .mobile_nav_btn .mobile_nav_line {
+      width: 100%;
+      height: 3px;
+      background: #FFFFFF;
+      position: relative;
+      transition: 1s ease; }
+      .mobile_nav_btn .mobile_nav_line:nth-of-type(2) {
+        margin: 0.35em 0; }
+    .mobile_nav_btn .mobile_line_top {
+      transform: rotate(45deg);
+      top: 13px;
+      position: absolute; }
+    .mobile_nav_btn .mobile_line_middle {
+      display: none; }
+    .mobile_nav_btn .mobile_line_bottom {
+      transform: rotate(135deg);
+      top: 13px;
+      position: absolute; }
+
+  .nav_menu {
+    width: 100%;
+    height: 0;
+    background: #F08700;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; }
+    .nav_menu .nav_ul {
+      position: relative;
+      top: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .nav_menu .nav_ul .navi {
+        padding: 15px;
+        font-weight: 700;
+        font-size: 0.5em;
+        letter-spacing: 3px;
+        line-height: 2.5;
+        text-decoration: none;
+        color: #FFFFFF;
+        text-transform: uppercase; }
+
+  .nav_menu_open {
+    transform: translateX(0);
+    transition: transform 0.6s ease;
+    height: 0em;
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
+
+  .hero_title {
+    font-family: abril fatface;
+    font-size: 4.5em;
+    text-align: center;
+    padding-top: 2em;
+    color: #FFFFFF; }
+
+  .ingredients_btn, .direction_btn {
+    padding: 10% 0;
+    text-align: center; }
+    .ingredients_btn .button_pop, .direction_btn .button_pop {
+      background: #F08700;
+      padding: 0.8em 1.8em;
+      border-radius: 0.3em;
+      color: #FFFFFF;
+      font-weight: 300;
+      font-size: 16px; }
+
+  .direction_btn {
+    padding: 1.5em;
+    text-align: center; }
+    .direction_btn .button_pop {
+      padding: 0.8em 1.9em; }
+
+  .buttons {
+    padding: 2em; }
+    .buttons .nutri_btn, .buttons .ingredients_btn {
+      padding: 1.5em; }
+
+  .about_sec, .video_sec, .styles_sec {
+    padding-top: 4em;
+    text-align: center; }
+    .about_sec .about_head, .about_sec .video_head, .about_sec .styles_head, .video_sec .about_head, .video_sec .video_head, .video_sec .styles_head, .styles_sec .about_head, .styles_sec .video_head, .styles_sec .styles_head {
+      padding: 1em 0; }
+
+  .video_content {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; }
+    .video_content iframe {
+      position: absolute;
+      top: 15%;
+      left: 12.5%;
+      width: 75%;
+      height: 75%; }
+
+  .the_styles {
+    display: flex;
+    flex-direction: row; }
+    .the_styles .style_list {
+      display: flex;
+      padding-bottom: 3em; }
+      .the_styles .style_list .wings {
+        padding-top: 2em;
+        font-weight: 700;
+        font-size: 1em;
+        font-family: abril fatface; }
+      .the_styles .style_list .plates {
+        max-width: 100%;
+        padding: 1em 0; }
+
+  footer {
+    background-color: #F08700;
+    padding: 2em 0 3.5em 0;
+    text-align: center;
+    color: #FFFFFF; } }
+
+/*# sourceMappingURL=style.css.map */
